@@ -6,7 +6,8 @@ contactForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   const formData = new FormData(contactForm);
-
+  formData.set("access_key", siteConfig.form.accessKey);
+  formData.set("subject", siteConfig.form.subject);
   if (!siteConfig.form.endpoint) {
     alert(`Thanks, ${formData.get("name")}! Your request has been received.`);
 

@@ -8,7 +8,11 @@ const siteConfig = {
   email: "contact@greenline.com",
   serviceArea: "Nashville, TN and surrounding areas",
   form: {
-    endpoint: "",
+    endpoint: "https://api.web3forms.com/submit",
+    accessKey: "0b5cb5e0-ef48-4560-9468-ca2a16b911ea",
+    subject: "New Quote Request - GreenLine Landscaping",
+    successMessage: "Thanks! Your request has been sent successfully.",
+    errorMessage: "Something went wrong. Please try again.",
   },
   services: [
     {
