@@ -8,12 +8,6 @@ contactForm?.addEventListener("submit", async (event) => {
   const formData = new FormData(contactForm);
   formData.set("access_key", siteConfig.form.accessKey);
   formData.set("subject", siteConfig.form.subject);
-  if (!siteConfig.form.endpoint) {
-    alert(`Thanks, ${formData.get("name")}! Your request has been received.`);
-
-    contactForm.reset();
-    return;
-  }
 
   try {
     const response = await fetch(siteConfig.form.endpoint, {
