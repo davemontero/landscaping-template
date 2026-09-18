@@ -576,6 +576,21 @@ textarea {
   color: var(--color-secondary);
 }
 
+.form-status {
+  min-height: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-status.success {
+  color: var(--color-primary);
+}
+
+.form-status.error {
+  color: #b91c1c;
+}
+
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
